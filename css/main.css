@@ -1,0 +1,247 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+* {
+    font-size: 10px;
+}
+
+html {
+    background-color: #fffafa;
+}
+
+
+  /* style fonts  */
+
+    @font-face {
+    font-family: 'Athena-Ruby';
+    src:url('../fonts/Athena-Ruby.ttf.woff') format('woff'),
+        url('../fonts/Athena-Ruby.ttf.svg#Athena-Ruby') format('svg'),
+        url('../fonts/Athena-Ruby.ttf.eot'),
+        url('../fonts/Athena-Ruby.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'abhaya_libremedium';
+    src: url('../fonts/AbhayaLibre-Medium-webfont.eot');
+    src: url('../fonts/AbhayaLibre-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AbhayaLibre-Medium-webfont.woff2') format('woff2'),
+         url('../fonts/AbhayaLibre-Medium-webfont.woff') format('woff'),
+         url('../fonts/AbhayaLibre-Medium-webfont.ttf') format('truetype'),
+         url('../fonts/AbhayaLibre-Medium-webfont.svg#abhaya_libremedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+h1,
+h2 {
+    font-family: 'Athena-Ruby', serif;
+    letter-spacing: 0.6rem;
+}
+
+section h2,
+aside h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-family: 'abhaya_libremedium', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+}
+
+body {
+    line-height: 1.7;
+}
+
+section h2 {
+    text-indent: 20px;
+}
+
+/* style navigation  */
+
+
+nav ul li a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+    text-decoration: none;
+    color: #a66;
+    font-size: 2rem;
+    border: 2px solid #a66;
+    border-radius: 6px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #a66;
+}
+
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+footer p {
+    text-align: center;
+}
+
+
+/* style list */
+
+a {
+    outline: none;
+}
+
+ul li,
+ol li {
+    line-height: 1.7;
+}
+
+aside ul li a {
+    outline: none;
+    padding: 3px 1px;
+    color: #4c7ece;
+    font-size: 1.7rem;
+}
+
+aside ul li,
+aside p a {
+    list-style: none;
+    background-image: url('../img/bullet.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 10px;
+    padding: 0 0 0 4%;
+
+}
+
+aside p a {
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+aside ul li ul a { 
+    cursor: pointer; 
+}
+
+aside ul li a:focus,
+aside p a:focus {
+    background: #aa6666;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    border-bottom: 1px solid;     
+    background: #aa6666;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+aside ul li a:active {
+    background: #aa6666;
+    color: #ffffff;
+}
+
+aside ul li a:visited {
+    color: #5f015a;
+}
+
+section ol li a {
+    outline: none;
+    text-decoration: none;
+    padding: 3px 1px;
+    color: #4c7ece;
+    font-size: 1.7rem;
+}
+
+section ol li a:hover {
+    background-color: #4c7ece;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+section ol li {
+    outline: none;
+    text-decoration: none;
+    padding: 3px 1px;
+    font-size: 1.7rem;
+    list-style-type: upper-roman;
+}
+
+section ul li {
+    font-size: 1.7rem;
+    list-style-type: square;
+}
+
+p a {
+    font-size: 1.7rem;
+}
+
+section p a {
+    background-image: url(../img/external-link-52.png); 
+    background-position: 100% 0; 
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    padding-right: 2rem;
+    outline: none;
+    color: #4c7ece;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
